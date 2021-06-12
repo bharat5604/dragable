@@ -1,0 +1,106 @@
+$greenColor:#48c863;
+$bgGrey:#d2d2d2;
+
+*{
+    font-family: Microsoft JhengHei;
+    margin-left: 10px;
+    // background-color: #4472C4;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+
+    //listBlock
+    .listBlock{
+        &.content{
+            width: 40%;
+        }
+        .input_drop{
+            display: flex;
+            margin: 0;
+            p{
+                margin: 0 10px;
+                &:first-child{
+                    margin-left: 0;
+                }
+                
+            }
+            input {
+                border-radius: 3px;
+                border: 1px solid #999;
+                height: 20px;
+                width: 100%;
+                border-radius: 8px;
+                margin: 0;
+                padding: 0 0 0 10px;
+                
+                
+             }
+        }
+        ul{
+            margin: 0 !important;
+        } li{
+            margin: 10px 0 !important;
+        }
+    }
+
+    // .dropzone
+    .drop_zone{
+        display: flex;
+        flex-direction: column;
+        width: 40% !important;
+        margin-right: 70px;
+        .listBlock{
+            border: 1px dotted $greenColor;
+            border-top: none;
+            margin: 20px 0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+            h2{
+                background:$greenColor !important;
+                color: #fff;
+                text-align: center;
+                font-size: 16px;
+                padding: 5px 0;
+                margin: 0;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+        }
+    }
+}
+
+#sortable1, #sortable2, #sortable3, #sortable4 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+    // background: #fff;
+    padding: 5px;
+    // width: 250px;
+/*     border: 1px solid black; */
+    border-radius: 5px;
+}
+#sortable1 li, #sortable2 li, #sortable3 li, #sortable4 li {
+    color:black;
+    cursor: move;
+    margin: 7px 17px;
+    padding: 5px;
+    font-size: 1em;
+    // width: 200px;
+    background: none;
+    background-color: $bgGrey;
+    border-radius: 5px;
+   color: #000
+}
+.selected {
+    background:$bgGrey !important;
+}
+.hidden {
+    display:none !important;
+}
+ul {
+    list-style-type: none;
+}
+
